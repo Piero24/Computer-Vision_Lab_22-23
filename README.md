@@ -7,7 +7,7 @@
 
 ---
 
-## Exercises on concurrent programming for the Operational Systems course
+## Exercises on OpenCV with C++ for Computer Vision course
 
 
 These files are the exercises required in the 2022-2023 academic year for
