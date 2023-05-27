@@ -1,0 +1,168 @@
+
+%
+%  cognome-tesina - easy report main template
+%
+
+% TeXstudio: SET THIS FILE AS 'EXPLICIT ROOT DOCUMENT"
+
+
+% --- texstudio magic comment
+% ! master
+% !TEX encoding = UTF-8
+% !TeX program = pdflatex
+%% !TeX program = xelatex
+% !TeX root = "report01.tex"
+% %  !TeX spellcheck = en_US
+% !TeX spellcheck = it_IT
+
+%  a4 paper, two columns italian language
+
+
+
+\documentclass[a4paper,12pt]{report}
+\usepackage{textcomp}
+\usepackage{easyrep} % an agile style for report wirting
+                     % see comments at the beginning of 
+                     % the package file
+
+
+
+
+
+% =============================================================================
+
+%\input{hyphen_it.input.tex} 	% hyphenation rules
+
+% -------------------------------------------
+% cover definition
+\Title{Computer vision course}
+\Subtitle{Lab 6 - Image matching}
+\Author{Pietrobon Andrea}
+\Date{\today}
+
+
+
+% -------------------------------------------
+% local cmds
+% (-- put here user defined macros--)
+
+
+
+% -------------------------------------------
+\begin{document}
+
+\printCover       % print a cover page
+%\tableofcontents  % table of contents
+
+
+% -------------------------------------------
+% SINGLE DOCUMENT
+% nel caso di docvumenti redatti in un unico file, scrivere qui il testo
+
+% useful text starts here
+
+%\chapter{Intro}
+%Qui il testo ... \\
+
+%\Vispa
+
+% -------------------------------------------
+% MULTIPLE DOCUMENTS
+% nel caso di documenti multipli includere qui 
+% i file corrispondenti
+% es.
+\input{template-report.tex} 
+%\input{void-input.tex} 
+
+
+
+% ------------------------------------------------------
+% bibliography
+% - comment \cite{*} if you want toinclude references that are explicitly 
+%   quoted in the preceding text
+% - add/modify bibtex files in the \bibliografy command 
+\clearpage
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\nocite{*} % inserts ALL the references contained in the
+           % ".bib" files defined by the  following "\bibliography{}" commands
+%\bibliography{bib/bib-iq,bib/bib-stat,bib/bib-iq-web.bib}
+%\bibliography{bib/bib-pietrobon_report}
+%\bibliographystyle{ieeetr} % acm siam abbrv plain, alpha, abbrv, ieeetr
+
+
+% ------------------------------------------------------
+
+
+
+
+% ====================================================================
+\end{document}
+% ====================================================================
+
+
+
+% ====================================================================
+% ====================================================================
+
+
+
+
+% ====================================================================
+% memo available commands
+% ====================================================================
+% easyrep: summary of provided macros
+%
+% \Title{text}     defines the document title 
+% \Subtitle{text}  defines the subtitle
+% \Author{text}    defines the author string
+% \Date{text}      defines a date string
+% \printCover      print a cover page using above information
+%
+% --- text styles
+% \tDef{text}      definition (generic) 
+% \tDefObj{text}   definition (the ter being defined)
+% \tDefTxt{text}   definition (the statement defining the term) 
+% \tRemark{text}   remarked text
+% \tREMARK{text}   highly remarked text 
+% \tLoud{text}     shouted text! 
+% \tCode{text}     inline code text
+% \tLatin{text}    latin text
+% \tForeign{text}  foreign language text 
+% \tExample{text}  example 
+% \tStandard{text} a recommendation 
+% \tQuote{text}    a quoted text 
+% \tQuoteFig{text} a quoted text referring to a figure 
+% \tConcept{text}  an important concept  
+% \tBeginPar{text} highlighted text 
+%                  at the beginning of a paragraph 
+%
+% ---environments
+% \begin{quoteStandard} text... \end{quoteStandard}
+%    print text to be quoted, e.g. sentences from 
+%    a recommendation
+%
+% \begin{quoteRemark} text... \end{quoteRemark}
+%    similar to quoteStandrd, but the text is more marked
+%
+%  
+% --- typo accelerators
+% \qmo             opening quotation mark (use \qmo{})
+% \qmc             closing quotation mark (use \qmc{})
+% \th  emphasises "th"
+% \ie  slanted "i.e."
+% \eg  slanted "e.g."
+% \es  slanteg "ad es."
+% \octave   "octave" in \tCode style
+% \matlab   "matlab"
+% \labview  "labVIEW"
+% \latex    "LaTeX" (just the text!)
+%
+% --- math typo accelerators
+% \v{math text}  underlines the math text (useful for vector) 
+%
+% --- debug commands
+% \debugTextStyles        print a table showing text styles
+% \debugPrintCharacters   print a table of characters
+% \Vispa                  print some text (to fill)  
+% \Vispas                 more filling text
+% ====================================================================
