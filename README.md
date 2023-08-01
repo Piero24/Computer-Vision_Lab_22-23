@@ -15,14 +15,12 @@ computer vision course.
 
 Here is a collection of related solutions.
 
-The homework consists in carrying out some exercises to learn the basics
-of OpenCV and Computer Vision.
+The task consists of performing some exercises to learn the basics of OpenCV and Computer Vision.
 
-The texts of the various exercises with relative solutions are present.
+The texts of the various exercises are provided with their respective solutions.
 
-**NOTE:** The exercises can have multiple solutions and it is said that those are present
-in these files are the best.
-
+**NOTE:** Exercises may have multiple solutions.
+The ones present in these files may not necessarily be the best ones.
 
 ## Disclaimer
 
